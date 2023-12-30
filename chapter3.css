@@ -2,7 +2,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+ font-size: 24px;
     color: rgb(0, 0, 0); /* Dark text color */
 background-color:blue;
     background-image: url("back.jpg");
@@ -16,7 +16,9 @@ background-color:blue;
 top: 0;
     left: 10;
        margin-left: 10px;
-    font-size: 24px;
+width: 60%;
+height: auto;
+   
     background-attachment: fixed;
     position: relative;
  
