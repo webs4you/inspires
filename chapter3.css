@@ -23,7 +23,9 @@ top: 0;
       
 width: 60%;
 height: auto;
-   margin-right:90px
+   
+   
+   padding-right: 20px; 
     background-attachment: fixed;
     position: relative;
  
