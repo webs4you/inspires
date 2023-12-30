@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f00a6a;
+}
+
+.header_text {
+    
+    font-weight: bold;
+    color: rgb(228, 84, 84);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+h1{
+    font-size: larger;
+}
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}

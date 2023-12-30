@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wohoooooooo</title>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+<body>
+    <audio autoplay preload="auto" loop>
+        <source src="audios/ani.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <div>
+            
+            <h2>Wooohoo!! See you soon!</h2>
+            <br>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+            <img src="https://media0.giphy.com/media/yl3xCL7IMbMxwscPlm/giphy.gif">
+            
+        </div>
+    </div>
+
+    <style>
+       
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .gif_container {
+            text-align: center;
+            margin-top: 15px;
+            size: 20px;
+            
+        }
+
+        .gif_container img {
+            display: inline-block;
+            position:static;
+            margin-top: 0px; /* Adjust the margin as needed */
+        }
+
+       
+        body {
+            margin: 0;
+            overflow: hidden;
+            animation: colorChange 10s infinite alternate, confetti 5s infinite;
+
+  
+
+        }
+
+        @keyframes colorChange {
+            0% {
+                
+    /*(background image: linear) forvarying background color*/
+                background-image: linear-gradient(to bottom,#e7bcbc,red);
+            }
+            25% {
+                background-image: linear-gradient(to bottom,rgb(146, 146, 226),rgb(8, 8, 241));
+            }
+            50% {
+                background-image:linear-gradient( to top,#f7de06,rgb(92, 83, 9));
+            }
+            75% {
+                background-image: linear-gradient(to left,#bcf0c7,rgb(3, 70, 17));
+            }
+            100% {
+                background-image: linear-gradient(to right,rgb(19, 221, 171),rgb(14, 80, 88));
+            }
+        }
+
+        @keyframes confetti {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50vh);
+            }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f0f;
+            border-radius: 50%;
+            animation: rotate 3s infinite, fadeInOut 3s infinite;
+        }
+
+        @keyframes rotate {
+            0%, 100% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+       
+
+        h1,h2 {
+            text-align: center;
+            padding: 0px;
+            font-size: 3em;
+            color: rgb(0, 0, 0);
+        }
+
+
+
+    </style>
+</body>
+</html>

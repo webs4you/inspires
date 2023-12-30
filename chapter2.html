@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Between the Pages</title>
+   
+    <h1>The Little things she knows</h1>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: black; /* Dark background color */
+            color: #fdfdfd; /* Black text color */
+            margin: 0; /* Remove default margin */
+          
+        }
+
+        #notebook-container {
+             /* (position:fixed)make the position un changeable */
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        
+        }
+
+        .notebook-page {
+            width: 150px;
+            height: 200px;
+            background-color: #fc9f9f; /* Notebook page color */
+            border: 1px solid #141211; /* Notebook page border */
+            position: absolute;
+            opacity: 0;
+            animation: pageFly linear infinite;
+        }
+
+        @keyframes pageFly {
+            0% {
+                transform: translate(-50vw, -50vh) rotate(-30deg) scale(0.5);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(150vw, 150vh) rotate(30deg) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        .story {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: rgba(255, 1, 1, 0.2);
+        }  
+        h1 {
+            font-style: oblique;
+            text-align: center;
+            
+            width: 100%;
+        }
+
+        table {
+            width: max-content;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        tr, td {
+            border: 1px solid transparent;
+            text-align: left;
+            border-color: #f7eeee;
+            border-radius: 1px;
+            padding: 20px;
+            transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+        }
+
+        tr:hover {
+            transform: scale(1.01);
+            background-color: rgba(236, 158, 139, 0.5); 
+        }
+
+        #sun {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00; /* Sun color */
+            border-radius: 50%;
+            top: 15%;
+            right: 10%;
+            
+        }
+
+        .planet {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 5%;
+            right: 0%;
+            border-radius: 50%;
+            animation: orbit 4s linear infinite;
+        }
+
+        #planet1 {
+            background-color: #e7dede; /* Planet color */
+            top: 10%;
+            right: 7%;
+        }
+
+        #planet2 {
+            background-color: #ff4c4c; /* Planet color */
+            top: 10%;
+            right: 11%;
+        }
+
+        #planet3 {
+            background-color: #4cff4c; /* Planet color */
+            top: 10%;
+            right: 15%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(150px) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(150px) rotate(-360deg);
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="sun"></div>
+    <div id="planet1" class="planet"></div>
+    <div id="planet2" class="planet"></div>
+    <div id="planet3" class="planet"></div>
+    <div id="notebook-container"></div>
+    <script>
+        const notebookContainer = document.getElementById('notebook-container');
+        for (let i = 0; i < 8; i++) { // Adjust the number of pages as needed
+            const notebookPage = document.createElement('div');
+            notebookPage.className = 'notebook-page';
+            notebookPage.style.left = Math.random() * window.innerWidth + 'px';
+            notebookPage.style.top = Math.random() * window.innerHeight + 'px';
+            notebookPage.style.animationDuration = 7 + Math.random() * 5 + 's';
+            notebookContainer.appendChild(notebookPage);
+        }
+    </script>
+
+
+
+    <table>
+        
+        <thead></thead>
+        <tr>
+            <th>Who I am?</th>
+            <td>I am one of the planets that revolves around you!</td>
+        </tr>
+        <tr>
+            <th>Who are you?</th>
+            <td>You are the only sun!</td>
+        </tr>
+        <br>
+        <tr>
+            <th>The year blossomed</th>
+            <td>2002</td>
+        </tr><tr>
+     <th>Early Days</th>
+     <td>Seattle</td>
+    </tr><tr>
+     <th>The twisted transformation</th>
+     <td>KK nagar</td>
+    </tr><tr>
+     <th>School?</th>
+     <td>Shesha's Bavan</td>
+    </tr><tr>
+     <th>The Strict Phase</th>
+     <td>Velammal :(</td>
+    </tr> <tr>
+     <th>The Happiest days</th>
+     <td>SMC They say</td>
+    </tr>
+    
+       <tr>
+        <th>Hobbies</th>
+        <td>Music, Movies, Sometimes football and books</td>
+       </tr>
+       <tr>
+        <th>Aspiration</th>
+        <td>USMLE (Congrats for clearing Step 1! Just 2 more to go)</td>
+       </tr>
+       <tr>
+        <th>The most confused path</th>
+        <td>IISC or MBBS and then finally MBBS</td>
+       </tr>
+       <tr>
+        <th>Favourite Color</th>
+        <td>Always the dark ones</td>
+       </tr>
+       <tr>
+        <th>The finger licking one</th>
+        <td>Pitz-uhh</td>
+       </tr>
+       <tr>
+        <th>Series?</th>
+        <td>Stranger Things? Sidney Sheldon?</td>
+       </tr>
+       <tr>
+        <th>Do you know me?</th>
+        <td>Not even the existent </td>
+       </tr>
+</table>
+<audio autoplay preload="auto" >
+    <source src="audios/bekh.mp3" type="audio/mp3">
+    
+</audio>
+</body>
+
+</html>

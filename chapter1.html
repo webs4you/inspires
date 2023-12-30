@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unexpected Beginnings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f7bddf; /* Dark background color */
+           font-weight:500;
+           font-style: italic;
+            color: #000000; /* White text color */
+        }
+
+        #petal-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+       
+
+        .petal {
+            width: 20px;
+            height: 20px;
+            background-color: #ff0000; /* Vibrant petal color */
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0;
+            animation: petalFall linear infinite;
+        }
+
+        @keyframes petalFall {
+            0% {
+                transform: translateY(-50vh) rotate(0deg) scale(0.5);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        .story {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: rgba(255, 1, 1, 0.2);
+        }
+        
+        
+        ol{
+            color:#000000;
+            
+            font-weight:bolder;
+            list-style: circle;
+        }
+       
+        li a{
+            text-decoration:none;
+            color: black;
+            font-size: small;
+            font-style: italic;
+            
+        }
+             /*(li a:hover) when keeping the mouse*/
+        li a:hover{
+            text-decoration: underline;
+
+        }
+        #back{
+            text-decoration: none;
+            text-align: right;
+            font-size: small;
+            color: #ff0000;
+          
+
+        }
+        #back :hover{
+            color:#000000;
+            text-decoration: none;
+        }
+
+
+
+        .imgg{
+            width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 90%; /* Make the image circular */
+    object-fit: cover;
+    margin-top: 10px; 
+    object-position: center top; 
+    border: 2px solid palevioletred;
+
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div id="petal-container"></div>
+    <div class="story">
+        <h1>Chapter 1: Unexpected Beginnings</h1>
+        <p>It was just a ordinary day, you know? The kind where the sun does its thing, and life moves at its own pace. But then, something changed, something as simple as hearing your name for the very first time.</p>
+       
+        <p>Little did I realize, that seemingly ordinary day marked the start of a story. A story about a girl, inspired by a boy, ready to pen down her thoughts and feelings. It's like this website I'm about to write will be my way of letting you into my world, of sharing pieces of myself that I've never shared before.</p>
+        <p>So, 2 years back! It became the beginning of a journey, a journey of inspiration, discovery, and the hope that through these written words, you might just get to know a bit more about the girl who found something special in the simple mention of your name.</p>
+    </div>
+
+    <script>
+        const petalContainer = document.getElementById('petal-container');
+        for (let i = 0; i < 80; i++) {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            petal.style.left = Math.random() * window.innerWidth + 'px';
+            petal.style.animationDuration = 7 + Math.random() * 5 + 's';
+            petalContainer.appendChild(petal);
+        }
+    </script>
+
+    <ol>
+        <!-- (#) for sections Redirecting -->
+        <li><a href="#title1">Ordinary April Moments</a></li>
+        <li><a href="#title2">The Name that Echoed</a></li>
+        <li><a href="#title3">Whispers of Curiosity</a></li>
+        <li><a href="#title4">In Search of Color</a></li>
+        
+    </ol>
+
+    <!-- (sections) for Redirecting -->
+    <section id="title1">
+        <h1>Ordinary April Moments</h1>
+        <p>She was just a regular girl, you know? Average in everything she did. Studying some random course in an average college. Nothing too flashy. She felt ordinary, just going through the motions of life.</p>
+        <p>Then there was him—totally different. Successful in everything, like he had some extra bit of extraordinary in him. But here's the thing: he didn't even know her. Well, that's no wonder. She was just an observer, quietly doing her thing.</p>
+        <p>Yet, in these simple, ordinary moments of April, something special started to happen. In her ordinary way, she found a kind of magic that changed her perspective. It was like even in her regular life, there was something quietly extraordinary.</p>
+    </section>
+
+    <section id="title2">
+        <h1>The Name that Echoed</h1>
+        <p>In the ordinary moments of April, she found herself sitting among friends, sharing stories just like they always did. It was in one of those casual exchanges that she first heard about him. A friend painted a picture of a guy who seemed to have it all—the best at everything he touched.</p>
+        <p>As the tales unfolded, his name, a simple four-letter arrangement, started to weave itself into the fabric of her thoughts. It was during those stories that something shifted inside her. His name wasn't just a name; it was accompanied by a narrative, a storyline that sparked a newfound curiosity within her.</p>
+        <p>Curled up in the cozy corners of her ordinary life, his name began to echo in her mind like a soft melody. Each repetition seemed to carry a hint of something more, something beyond the ordinary. Unbeknownst to her, in that unassuming name and the stories attached, the chapters of her life were quietly getting ready to unfold into something extraordinary. And so, in the echo of his name, the unexpected dance of their stories began.</p>
+    </section>
+
+    <section id="title3">
+        <h1>Whispers of Curiosity</h1>
+        <p>
+           
+            
+            It all began with a soft whisper of curiosity. As the pages of her life turned, she found herself captivated by the enigma of him. Who was he? What made him tick? <p>The very first glimpse she caught was in the small rectangle of her phone screen. There he was, holding a phone, draped in a blue kurta, half-hidden, revealing only his eyes—an ocean of mystery. His hair, a fluffy cloud framing his face, added to the intrigue.
+           
+            That moment sparked something inside her—a spark of curiosity that refused to be extinguished. It was as if a story unfolded in that solitary image, leaving her yearning for more. And so, her journey to unravel the layers of his existence began.
+            
+            </p>
+          
+            <img class="imgg" src="images/intro.jpg" alt="intro" width="250" height="200">
+     
+  <!--(figcaption) for caption-->  
+  <!--(code) for example code sample-->  
+            <figcaption>An ordinary teen</figcaption>
+            <code>Trying to become extraordinary XD</code>
+        </section>
+
+    <section id="title4">
+        <h1>In Search of Color</h1>
+        <p>Driven by an insatiable curiosity, she embarked on a quest, reminiscent of the explorers of old seeking treasures across vast seas. In her modern-day odyssey, she navigated through his digital realms, chasing glimpses of his life. From one platform to another, she painted a picture of him—each post, each photo adding a stroke to the canvas of her imagination.
+</p>
+    <p>        His virtual presence became a spectrum of colors, each hue revealing a facet of his personality. The search wasn't just about finding information; it was about discovering the vibrant palette of his existence. With every click, she inched closer to understanding the person behind the pixels, tracing the contours of a story waiting to unfold.</p>
+    </section>
+
+  <!--(#) for back to top-->  
+<p id="back"><a href="#">Back to the beginning of era</a></p>
+
+<!--(audio autoplay preload) for audio-->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var audio = new Audio("audios/husn.mps.mp3");
+            audio.loop = true;
+            audio.play();
+        }, 2000); // 5000 milliseconds (5 seconds) delay
+    });
+</script>
+</body>
+
+</html>

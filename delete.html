@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+    <main class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+      
+<section>
+    <!-- (fieldset) for putting boxes -->
+    <fieldset>
+        <legend>Info Corner</legend>
+        <br>
+        <!-- (form) for client side enterings -->
+        <form action="" method="get">
+
+            <label for="like">You like my website?</label>
+            <input type="radio" name="like" value="Kind Of"> Kind Of
+            <input type="radio" name="like" value="Nah It's creepy"> Nah It's creepy
+
+            <br><br>
+
+            <!-- (placeholder) for holding values -->
+            <label for="danger">Do I feel dangerous?</label>
+            <input type="text" name="danger" placeholder="No I'm not at all">
+
+            <br><br>
+
+            <!-- (select) for list value options -->
+            <label for="age">Guess my age</label>
+            <select name="age" id="age">
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+            </select>
+
+            <br><br>
+
+            <label for="this">Do you feel like I do like this to everyone?</label>
+            <input type="text" name="this" placeholder="You are the first" required>
+
+            <br><br>
+
+            <label for="phone">Umm..DOB?October?</label>
+            <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+            <br><br>
+            <label for="message">Anything you wanna say?</label>
+            <textarea name="message" rows="4" placeholder="Your little words means alot"></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</section>
+
+
+    </main>
+</body>
+</html>

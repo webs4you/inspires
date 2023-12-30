@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: black;
+    padding: 0.5rem;
+    color: aliceblue;
+    font-size: large;
+}
+
+.container{
+    /*display: grid; for grid boxes*/
+    display: grid;
+   
+    grid-template-columns:300px 1fr 1fr;
+    grid-auto-rows: 200px;
+    gap:4em;
+
+  
+
+}
+
+
+section {
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid rgb(4, 4, 87);
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+p {
+    font-size: 2rem;
+    text-indent: 0px;
+    font-style: oblique;
+    font-weight: 400;
+}
+
+fieldset {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+legend {
+    font-style: cursive;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+textarea,
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: rgb(15, 12, 12);
+    font-size: 15px;
+}
+
+.chapter3colors {
+    color: rgb(124, 0, 62);
+}
+
+#detailedcolors {
+    color: darkred;
+}
+
+p section {
+    color: darkblue;
+}
+.box:first-child{
+      /* 1--start  3--end*/
+    grid-column:1/3;
+    background-color: brown;
+}

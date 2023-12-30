@@ -1,0 +1,108 @@
+
+html{
+    font-size: large;
+    background-color: rgb(246, 247, 250);
+}
+body{
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-image: url('../images/story.jpg');
+
+    /*(backround size:cover)--full image comes*/
+    background-size: cover;
+
+     /*(background position) to locate position of the image*/
+    background-position: left;
+
+    /*(backround repeat:no repeat)--only once the image is repeated*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin-left: 2px;
+
+    top:0;
+    font-weight: 400;
+
+}
+hr{
+    border-color: black;
+}
+li {
+    /*  list-style-type: none*/
+    list-style-type: square;
+    padding: 0;
+    font-style: oblique;
+    
+    
+}
+
+
+ /*(marker) for bullet editing*/
+::marker{
+    color:rgb(78, 0, 0)
+}
+
+ul li:nth-child(3){
+color:rgb(255, 0, 0);
+}
+
+a{
+              /* Set the text color to black */
+    color: black;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;        /* Show a pointer cursor on hover to indicate it's a link */
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+color:rgb(0, 0, 0)
+}
+#base{
+    text-align: right;
+    font-size: large;
+}
+.quote{
+    font-style: oblique;
+
+
+    text-shadow: 12px;
+    color: rgb(31, 22, 22);
+}
+
+/*(div class="block right") for floating*/
+.block img{
+
+    color:white;
+    width: 210px;;
+    height: 200px;
+    margin-right: 720px;
+    text-align: center;
+    
+
+}
+/*(div class="block right")(.right) for floating in right*/
+.right{
+    float: right;
+}
+/*(display:flow root) to adjust float box8*/
+section{
+   
+    border: 2px solid black;
+    display: flow-root;
+    font-weight: bold;
+
+
+    /*text-shadow: for shadow*/
+    text-shadow: 2px 2px 3px white;
+
+    
+}
+p{
+    /*(background color) for text
+    background-color: hsl(0, 0%, 0%,0.452);*/
+
+    /*(background image: linear) forvarying background color
+    background-image: linear-gradient(blue,white)*/
+}
