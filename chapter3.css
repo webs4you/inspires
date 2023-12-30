@@ -13,8 +13,7 @@ background-color:blue;
     background-repeat: no-repeat;
     top: 0;
     left: 10;
-    width: 60%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+   
     background-attachment: fixed;
     position: relative;
        margin-left: 10px;
