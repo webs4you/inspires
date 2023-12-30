@@ -1,29 +1,25 @@
 
-*{
-  
-    box-sizing: border-box;
-}
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 10px;
-    font-size: 24px;
-    color: rgb(0, 0, 0); /* Dark text color */
-background-color:white;
+    
+background-color: #white;
     background-image: url('../images/back.jpg');
 background-position: right;
-
+  width: 60%;
     /* (background attachement) remains the same*/
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
     left: 10;
-    width: 60%; /* Adjust the width as needed */
+   /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     background-attachment: fixed;
 
     position: relative;
-   
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    font-size: 24px;
+    color: rgb(0, 0, 0); /* Dark text color */
     
 }
 
