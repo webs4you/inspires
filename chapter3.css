@@ -3,7 +3,7 @@
 body {
     
 background-color: #white;
-    background-image: url('../images/back.jpg');
+    background-image: url("back.jpg");
 background-position: right;
   width: 60%;
     /* (background attachement) remains the same*/
