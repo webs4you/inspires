@@ -13,7 +13,7 @@ background-color:blue;
     background-repeat: no-repeat;
     top: 0;
     left: 10;
-   
+    background-position: right; 
     background-attachment: fixed;
     position: relative;
        margin-left: 10px;
