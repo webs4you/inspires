@@ -2,13 +2,14 @@
 
 body {
     
-background-color: #white;
-    background-image: url("back.jpg");
+background-color: #45a049;
+background-image: url("back.jpg");
 background-position: right;
   width: 60%;
     /* (background attachement) remains the same*/
     background-size: cover;
     background-repeat: no-repeat;
+float: right;
     top: 0;
     left: 10;
    /* Adjust the width as needed */
