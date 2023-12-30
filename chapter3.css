@@ -1,13 +1,8 @@
 
-*{
-  
-    box-sizing: border-box;
-}
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 10px;
-    font-size: 24px;
+
     color: rgb(0, 0, 0); /* Dark text color */
 background-color:blue;
     background-image: url("back.jpg");
@@ -22,7 +17,8 @@ background-color:blue;
     height: auto; /* Maintain aspect ratio */
     background-attachment: fixed;
     position: relative;
-   
+       margin-left: 10px;
+    font-size: 24px;
     
 }
 
