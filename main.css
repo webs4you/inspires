@@ -6,7 +6,7 @@ body{
    
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-    background-image: url('../images/story.jpg');
+    background-image: url('images/story.jpg');
 
     /*(backround size:cover)--full image comes*/
     background-size: cover;
