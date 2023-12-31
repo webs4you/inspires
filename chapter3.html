@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="containers"> 
     <title>Fateful Encounters</title>
     <link rel="stylesheet" href="chapter3.css">
-    
+    <style>
+      
 
-</head>
-<body>
+        header {
+           
+            text-align: center;
+            padding: 1em;
+        }
+
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            
+            .image-container img {
+        max-width: 100%; /* Adjust for smaller screens */
+    }
+            header {
+                font-size: 1.5em;
+            }
+
+            section {
+                padding: 0.5em;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+
+
+
     <audio autoplay preload="auto" >
         <source src="audios/final.mp3" type="audio/mp3">
       </audio>
+      <body>
+        
     <h2>The One-Sided Encounters</h2>
     
     <h3>The First Sihoutte meet</h3>
@@ -28,18 +61,18 @@
 
 <h3>The Meetings with the fantasy you!</h3>
 <p class="chapter3colors">
-And then I visited to the places where you've been. To know your height-VR , To know your interests-Elliot's, To know your detinations- Delhi, Himalayas, Varkala(I already visited XD) and finally to know you I came to SMC.
+    Exploring the places you've been became a journey for me: from discovering at VR Mall to understanding your interests at Elliot's, tracing your destinations like Delhi, the Himalayas. Finally, in an effort to genuinely know you, I found myself at SMC, but I wasn't able to find you. It's not about following, but about sharing the experiences.
 
 </p>
 
 <section class="Vr">
-    <p>
-<img src="images/sm.jpg" alt="vrmall" width="200px height=100px">
+  
+<img src="images/sm.jpg" alt="vrmall" width="200px" height="100px">
 
-</p>
+
 
 <!--(span) for image caption-->
-<span class="capfor">Guess where?</span>
+<div class="capfor">The dream stage</div>
 </section>
 
 
@@ -61,28 +94,31 @@ In that fleeting moment, I saw you up close, the person who had unknowingly beco
 </p>
 <section class="place">
     <p>
-<img src="images/place.jpg" alt="place" width="200px height=100px">
+<img src="images/place.jpg" alt="place" width="200px" height="100px">
 
 </p>
-<span class="capfor">That's where it is</span>
+<div class="capfor">That's where it is</div>
 </section>
 
 
 
 <section class="meet">
     <p>
-<img src="images/meet.jpg" alt="meet" width="200px height=100px">
+<img src="images/meet.jpg" alt="meet" width="200px" height="100px">
 
 </p>
 
-<!--(span) for image caption-->
-<span class="capfor">That's how it is</span>
+<!--(div) for image caption-->
+<div class="capfor">That's how it is</div>
 </section>
- 
+</div>
 </head>
-<body>
+
 
 <script>
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
         // Create raindrops dynamically
         for (let i = 0; i < 100; i++) {
