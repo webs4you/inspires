@@ -7,16 +7,17 @@ body {
     color: rgb(0, 0, 0); /* Dark text color */
 background-color: white;
     background-image: url("back.jpg");
-
+  background-size: 60%;
+  background-position: right bottom;
+ 
 
     /* (background attachement) remains the same*/
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
     left: 10;
-   background-position: right bottom;
-   background-size: 60%;
-    height: auto; /* Maintain aspect ratio */
+ 
+  
     background-attachment: fixed;
     position: relative;
    
