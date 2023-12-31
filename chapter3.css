@@ -5,7 +5,8 @@ body {
     margin-left: 10px;
     font-size: 24px;
     color: rgb(0, 0, 0); /* Dark text color */
-    background-image: url('../images/back.jpg');
+background-color: white;
+    background-image: url("back.jpg");
 
 
     /* (background attachement) remains the same*/
